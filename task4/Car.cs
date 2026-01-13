@@ -15,13 +15,6 @@ public double Fuel ;
 public void Drive(double miles)
     {
         double fuelNeeded = miles / 20;
-
-        if (Fuel > fuelNeeded)
-        {
-            Console.WriteLine("Not enough fuel. Please refuel before driving.");
-        }
-        else
-        {
             Mileage += miles;
             if (Fuel!=0)
             {
@@ -33,7 +26,6 @@ public void Drive(double miles)
 
             Console.WriteLine(
                 $"You have driven {miles} miles. Current mileage: {Mileage} miles. Remaining fuel: {Fuel} gallons.");
-        }
     }
 
     // Add fuel method
